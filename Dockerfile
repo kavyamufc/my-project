@@ -2,8 +2,8 @@ FROM openjdk:8-jre-alpine
 
 EXPOSE 8080
 
-RUN ls -ltr
-RUN ls -ltr /usr/app/
+RUN ls -ltr /dev/
+RUN ls -ltr /etc/
 COPY ./build/libs/my-app-1.0-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
 
